@@ -26,9 +26,9 @@ getGallery=()=>{
         console.log(this.state.galleryL)
         return(
 <div>
-<ul>
-                    {this.state.galleryL.map(taco=> (<GalleryItem taco={taco} />))}
-</ul>
+
+                    {this.state.galleryL.map(taco=> (<GalleryItem getGallery={this.getGallery}key={taco.id} taco={taco} />))}
+
 </div>
 
 
