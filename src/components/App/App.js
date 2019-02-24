@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import GalleryList from '../GalleyList/GalleryList'
 class App extends Component {
   render() {
     return (
@@ -9,7 +9,7 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br/>
-        <p>Gallery goes here</p>
+        <GalleryList/>
         <img src="images/goat_small.jpg"/>
       </div>
     );
