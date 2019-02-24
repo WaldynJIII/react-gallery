@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import GalleryList from '../GalleyList/GalleryList'
+import GalleryList from '../GalleryList/GalleryList'
 class App extends Component {
   render() {
     return (
