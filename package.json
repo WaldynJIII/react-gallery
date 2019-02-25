@@ -5,10 +5,10 @@
   "main": "index.js",
   "proxy": "http://localhost:5000",
   "scripts": {
+    "start": "react-scripts build && node server/server.js",
     "client": "react-scripts start",
-    "server": "node server/server.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "server": "nodemon  --watch server server/server.js",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "keywords": [],
@@ -20,7 +20,8 @@
     "express": "^4.16.4",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "@material-ui/core": "^3.9.0"
   },
   "browserslist": [
     ">0.2%",
