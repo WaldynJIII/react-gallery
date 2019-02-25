@@ -1,23 +1,26 @@
 {
-  "name": "react-gallery",
-  "version": "0.1.0",
-  "private": true,
+  "name": "react-gallery-master",
+  "version": "1.0.0",
+  "description": "Before you get started make sure to look through the code that has been provided. Server side code to retrieve data (`GET`) and like a photo (`PUT`) have been provided for you. For practice, we recommend testing out these routes in Postman. You should not need to modify these routes for base mode.",
+  "main": "index.js",
   "proxy": "http://localhost:5000",
-  "dependencies": {
-    "axios": "^0.17.1",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-scripts": "^2.1.3"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.4"
-  },
   "scripts": {
-    "start": "react-scripts build && node server/server.js",
     "client": "react-scripts start",
-    "server": "nodemon  --watch server server/server.js",
-    "test": "react-scripts test --env=jsdom",
+    "server": "node server/server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-scripts": "2.1.5"
   },
   "browserslist": [
     ">0.2%",
